@@ -1,0 +1,77 @@
+/* General styles for the checkbox grid and the dashed border */
+.checkboxGrid {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #9747FF;
+    border-radius: 4px;
+  }
+  
+  .checkboxContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 20px 18px;
+  }
+  
+  /* Styles for each checkbox, replacing ring with box-shadow where necessary */
+  .checkbox {
+    position: relative;
+    appearance: none;
+    flex-shrink: 0; /* Corrected from 'shrink' */
+    width: 25px;
+    height: 25px;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    background-color: white;
+    margin-top: 1px;
+  }
+  
+  .checkbox1 {
+    margin: 2px;
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border-radius: 4px;
+    appearance: none;
+  }
+  
+  .checkbox1:checked {
+    outline: none;
+    box-shadow: 0 0 0 2px #CDCDCD; /* Simulating ring-2 */
+  }
+  
+  .checkbox3:checked {
+    border-width: 2px;
+    border-color: #CDCDCD;
+    outline: none;
+    box-shadow: 0 0 0 3px #2469F6; /* Simulating ring-3px with blue color */
+  }
+  
+  /* Simulate ring-opacity and ring effects on checked states for other checkboxes */
+  .checkbox4:checked, .checkbox6:checked {
+    background-color: #5087F8;
+    box-shadow: 0 0 0 3px rgba(80, 135, 248, 0.15); /* Adjust opacity to simulate ring-opacity */
+  }
+  
+  .checkbox5:checked, .checkbox7:checked {
+    background-color: #2469F6;
+    box-shadow: 0 0 0 3px rgba(36, 105, 246, 0.15); /* Adjust opacity to simulate ring-opacity */
+  }
+  
+  .checkbox7:checked {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(36, 105, 246, 0.15); /* Similar box-shadow for consistency */
+  }
+  
+  .checkbox8, .checkbox9 {
+    position: relative;
+    appearance: none;
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    background-color: white;
+    margin-top: 1px;
+  }
+  

@@ -1,0 +1,60 @@
+/* AllPages.module.css */
+
+.container {
+    width: 578px;
+    height: 794px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .shadowBorderContainer {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #CDCDCD;
+    width: 370px;
+    height: 326px;
+    margin-top: 80px;
+  }
+  
+  .innerContainer {
+    margin: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Reflecting space-y-4 */
+  }
+  
+  .row {
+    margin: 8px 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .row + .row { /* Adding a border between rows */
+    border-top: 1px solid #CDCDCD;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #CDCDCD; /* Border above the button as specified */
+    padding-top: 16px;
+  }
+  
+  .button {
+    padding: 16px;
+    background-color: #FFCE22; /* Example background color */
+    color: #1F2128;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ffd746;
+  }
+  

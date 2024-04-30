@@ -1,0 +1,30 @@
+/* Buttons.module.css */
+.buttonContainer {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #9747FF;
+    border-radius: 4px;
+    width: 345px;
+  }
+  
+  .innerContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+  }
+  
+  .button {
+    background-color: #FFCE22;
+    color: #1F2128;
+    text-align: center;
+    padding: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ffd746;
+  }
+  
